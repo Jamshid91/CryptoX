@@ -1,0 +1,35 @@
+@keyframes circleBlue {
+    0% {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
+
+@keyframes circleAqua {
+    0% {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+
+@keyframes animLoader {
+    0% {
+        transform: scale(1);
+    }
+    80%,100% {
+        transform: scale(0);
+    }
+}

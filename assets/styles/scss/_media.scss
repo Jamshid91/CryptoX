@@ -1,0 +1,553 @@
+// TABLET
+@media screen and(max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    .desktop-header {
+        display: none !important;
+    }
+    .chance-to-win {
+        height: auto;
+        .left-info {
+            &__title {
+                font-size: 40px;
+            }
+            .income{
+                font-size: 40px;
+            }
+        }
+        .right-info {
+            width: 50%;
+
+            &-item {
+                width: 100%;
+                height: auto;
+                padding: 25px 15px;
+                .trader {
+                    text-align: center;
+                    &-photo {
+                        width: 160px;
+                        height: 160px;
+                    }
+                    &-btn {
+                        width: 160px;
+                        height: 50px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+            }
+            .check-list {
+                width: 200px;
+                height: 50px;    
+                margin: 10px auto;   
+                margin-right: 10px; 
+            }
+            .circle-blue,
+            .circle-aqua {
+               display: none;
+            }
+        }
+    } 
+    // End section
+
+    .work {
+        margin-top: 80px;
+        &-box {
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &-item {
+            width: 100%;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none !important;
+              }
+        }
+        &-list {
+            margin-right: 40px;
+        }
+
+        .calculator {
+            margin: 0  auto;
+        }
+    }
+    // End section
+
+    .cryptocurrency {
+        padding-bottom: 150px;
+        &-item {
+            width: 100%;
+        }
+        &-buttons {
+            overflow-x: scroll;
+            width: 100%;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &-btn {
+            min-width: 190px;
+            margin-right: 25px;
+        }
+        &-list {
+            width: 100%;
+            margin: 50px 0;
+            justify-content: space-between;
+        }
+    }
+    // End section
+}
+
+@media screen and(max-width: 768px) {
+    .chance-to-win {
+        padding-top: 100px;
+        &-item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .left-info {
+            width: 100%;
+            margin-bottom: 50px;
+            &__title {
+                font-size: 50px;
+            }
+            .income{
+                font-size: 50px;
+                margin: 30px 0;
+            }
+        }
+
+        .right-info {
+            width: 80%;
+
+            .check-list {
+                width: 220px;
+            }
+            .trader {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                &-photo {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+        }
+    }
+    // End section
+
+    .cryptocurrency {
+        padding-bottom: 150px;
+        &-item {
+            width: 100%;
+        }
+        &-buttons {
+            overflow-x: scroll;
+            width: 100%;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &-btn {
+            min-width: 155px;
+            margin-right: 25px;
+        }
+        &-list {
+            width: 100%;
+            margin: 50px 0;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &-info {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 50px;
+                text-align: center;
+                .progress {
+                    &-item {
+                        width: 100%;
+                      }
+                }
+            }
+        }
+        .copy {
+           text-align: center;
+           margin-top: 50px;
+           &__text {
+               font-size: 18px;
+               font-weight: 600;
+               text-align: center;
+           }
+           &-list {
+               width: 100%;
+               margin-top: 20px;
+           }
+        }
+        
+    }
+    // End section
+
+    .transactions {
+        &-item {
+            &-title {
+                height: auto;
+                flex-direction: column;
+                padding: 25px 0;
+                .title__text {
+                    font-size: 24px;
+                }
+                .title__info-text {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+        &-table {
+            width: 100%;
+            padding: 0 25px;
+
+            th,
+            td {
+                padding: 25px 0;
+            }
+
+           td:nth-child(3),
+            th:nth-child(3) {
+               display: none;
+           }
+            td:nth-child(4),
+            th:nth-child(4) {
+               display: none;
+           }
+           td:nth-child(5),
+           th:nth-child(5) {
+               display: none;
+           }
+
+            tbody {
+                .first-td {
+                    display: flex;
+                    align-items: center;
+                    .circle {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        margin-right: 20px;
+                    }
+                    .orange {
+                        border: 3px solid #F7931A;
+                    }
+                    .grey {
+                        border: 3px solid #343434;
+                    }
+                    .blue {
+                        border: 3px solid #114EF6;
+                    }
+                    .green {
+                        border: 3px solid #53AE94;
+                    }
+                }
+            }
+        }
+    }
+    // End section
+    
+    .faq {
+        &__title {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+        &-item {
+            width: 100%;
+        }
+        &-list {
+            width: 100%;
+            height: 120px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 25px;
+    
+            &:hover {
+                background-color: var(--white);
+            }
+    
+            &-item {
+                width: 100%;
+            }
+    
+            &__title {
+                font-size: 21px;
+            }
+    }
+    // End section
+}
+
+// MOBILE
+@media screen and(max-width: 576px) {
+    .chance-to-win {
+        padding-top: 100px;
+        &-item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .left-info {
+            width: 100%;
+            margin-bottom: 50px;
+            &__title {
+                font-size: 36px;
+            }
+            .income{
+                font-size: 36px;
+                margin: 30px 0;
+            }
+            .income__img {
+                width: 50%;
+            }
+        }
+
+        .right-info {
+            width: 100%;
+            &-item {
+                flex-direction: column-reverse;
+            }
+            .check-item {
+                flex-direction: row;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            .check-list {
+                width: 48%;
+                margin: 15px auto;
+                font-size: 15px;
+            }
+            .check-list-sub {
+                width: 100%;
+                justify-content: center;
+            }
+            .trader {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                &-photo {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+        }
+    }
+    // End section
+
+    .work {
+        margin-top: 120px;
+        &__title {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+        &-list {
+            margin-right: 40px;
+        }
+
+        .calculator {
+            width: 100%;
+            margin: 0  auto;
+            padding: 30px;
+            &__info-text {
+                font-size: 15px;
+            }
+            &-btn { 
+                width: 100%;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .accept {
+                width: 100%;
+            }
+        }
+    }
+    // End section
+    
+}
+}
+
+@media screen and(max-width: 376px) {
+    .chance-to-win {
+        &-item {
+            .left-info {
+                &__title {
+                    font-size: 31px;
+                }
+                .income{
+                    font-size: 31px;
+                    margin: 0;
+                    margin-top: 5px;
+                }
+                .income__img {
+                    width: 200px;
+                }
+                &__text {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                &__btn {
+                    width: 100%;
+                    font-size: 16px;
+                }
+            }
+
+            .right-info {
+
+                &-item {
+                    width: 110%;
+                    height: auto;
+                    margin-left: -17px;
+                    padding: 30px 15px;
+
+                    .check-item {
+                        display: flex;
+                        justify-content: start;
+                        flex-direction: row-reverse !important;
+                        height: 100%;
+                    }
+
+                    .check-list {
+                        width: 150px;
+                        height: 55px;
+
+                        &__text {
+                            font-size: 15px;
+                        }
+                    }
+                    .check-list-sub {
+                        width: 100%;
+                    }
+
+                    .trader {
+                        text-align: center;
+                        &-photo {
+                            width: 140px;
+                            height: 140px;
+                        }
+                        &__name {
+                            font-size: 18px;
+                            margin: 10px 0;
+                        } 
+                        &__info-text {
+                            font-size: 16px;
+                        }
+                        &-btn {
+                            width: 170px;
+                            height: 50px;
+                            font-size: 17px;
+                            font-weight: 600;
+                            margin-top: 35px;
+                            margin-bottom: 30px;
+
+                            .red-circle {
+                                width: 17px;
+                                height: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End section
+.work {
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 56px;
+    }
+    &-list {
+        &__info-text {
+            font-size: 16px;
+        }
+    }
+
+    .calculator {
+        height: auto;
+
+        &__info-text {
+            font-size: 15px;
+        }
+        &-btn {
+            font-size: 16px;
+            margin-top: 30px;
+        }
+    }
+}
+// End section
+
+.cryptocurrency {
+    padding-bottom: 150px;
+    &-item {
+        width: 110%;
+        margin-left: -17px;
+        padding: 60px 30px;
+    }
+
+    &-list {
+        &-info {
+            margin-top: 0;
+            .title__text{
+                margin-top: 20px;
+            }
+            .scan__text {
+                font-size: 16px;
+            }
+            .scan__text_desctop {
+                display: none;
+            }
+            .scan__text_mobile {
+                display: block;
+            }
+            .progress {
+                &-item {
+                    width: 100%;
+                  }
+            }
+        }
+    }
+
+    .copy {
+       margin-top: 60px;
+       &__text {
+           font-size: 18px;
+           font-weight: 600;
+       }
+       &-list {
+           width: 100%;
+       }
+    }
+}
+// End section
+
+.transactions {
+    &-item {
+
+        &-title {
+            .title__text {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .title__info-text {
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+// End section
+}
